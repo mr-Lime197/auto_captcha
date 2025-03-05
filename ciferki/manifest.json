@@ -1,0 +1,17 @@
+{
+    "name": "Ciferki",
+    "description": "capchu prohodit",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {},
+    "action": {},
+    "permissions": ["scripting", "activeTab"],
+    "background": {},
+    "content_scripts": [
+        {
+            "matches": ["https://lycreg.urfu.ru/*"],
+            "js": ["lib/tesseract.min.js", "content.js"]
+        }
+    ]
+
+}
